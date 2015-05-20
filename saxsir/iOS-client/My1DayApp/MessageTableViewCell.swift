@@ -25,6 +25,7 @@ class MessageTableViewCell: UITableViewCell {
     func setupComponentsWithMessage(message: Message) {
         self.iconImageView.image = message.icon
         self.messageLabel.text = message.body
+        self.createdAtLabel.text = message.createdAt
         // Mission1 UILabel のインスタンス変数に created_at の値を代入
     }
 }
