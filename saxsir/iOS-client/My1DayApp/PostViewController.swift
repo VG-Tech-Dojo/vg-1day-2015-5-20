@@ -16,6 +16,7 @@ class PostViewController: UIViewController {
     @IBOutlet weak private var messageTextView: UITextView!
     weak var delegate: PostViewControllerDelagate?
     // Mission2 Storyboard から UITextField のインスタンス変数を追加
+    @IBOutlet weak var usernameTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
