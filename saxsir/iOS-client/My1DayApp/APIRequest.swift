@@ -9,8 +9,9 @@
 import Foundation
 
 class APIRequest: NSObject {
-    static let baseURLString: String = "http://localhost:8888/"
-    
+    //static let baseURLString: String = "http://localhost:8888/"
+    static let baseURLString: String = "http://133.242.226.62/"
+
     class func getMessages(completionHandler: ((NSData!, NSURLResponse!, NSError!) -> Void)?) {
         let URL : NSURL = NSURL(string: APIRequest.baseURLString + Endpoint.Messages.rawValue)!
         let request: NSURLRequest = NSURLRequest(URL: URL)
